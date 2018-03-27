@@ -10,7 +10,7 @@ public class DataBaseHelper extends SQLiteOpenHelper {
 
     private static final String CREATE_PROVINCE =
             "CREATE TABLE Province ( " +
-                    "id integer PRIMARY KEY, " +
+                    "id integer PRIMARY KEY AUTOINCREMENT, " +
                     "provinceName text, " +
                     "provinceCode integer) ";
 
@@ -18,7 +18,7 @@ public class DataBaseHelper extends SQLiteOpenHelper {
 
     private static final String CREATE_CITY =
             "CREATE TABLE City ( " +
-                    "id integer PRIMARY KEY, " +
+                    "id integer PRIMARY KEY AUTOINCREMENT, " +
                     "cityName text, " +
                     "cityCode integer, " +
                     "provinceCode integer)";
@@ -27,7 +27,7 @@ public class DataBaseHelper extends SQLiteOpenHelper {
     
     private static final String CREATE_COUNTRY =
             "CREATE TABLE Country ( " +
-                    "id integer PRIMARY KEY, " +
+                    "id integer PRIMARY KEY AUTOINCREMENT, " +
                     "countryName text, " +
                     "weatherId text, " +
                     "cityId integer)";
