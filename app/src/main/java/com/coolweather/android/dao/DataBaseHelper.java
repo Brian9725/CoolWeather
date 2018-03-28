@@ -21,7 +21,7 @@ public class DataBaseHelper extends SQLiteOpenHelper {
                     "id integer PRIMARY KEY AUTOINCREMENT, " +
                     "cityName text, " +
                     "cityCode integer, " +
-                    "provinceCode integer)";
+                    "provinceId integer)";
 
     private static final String DROP_CITY = "DROP TABLE IF EXISTS City";
     

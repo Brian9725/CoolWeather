@@ -8,15 +8,15 @@ public class City {
 
     private int cityCode;
 
-    private int provinceCode;
+    private int provinceId;
 
     public City() {};
 
-    public City(int id, String cityName, int cityCode, int provinceCode) {
+    public City(int id, String cityName, int cityCode, int provinceId) {
         this.id = id;
         this.cityName = cityName;
         this.cityCode = cityCode;
-        this.provinceCode = provinceCode;
+        this.provinceId = provinceId;
     }
 
     public int getId() {
@@ -43,12 +43,12 @@ public class City {
         this.cityCode = cityCode;
     }
 
-    public int getProvinceCode() {
-        return provinceCode;
+    public int getProvinceId() {
+        return provinceId;
     }
 
-    public void setProvinceCode(int provinceCode) {
-        this.provinceCode = provinceCode;
+    public void setProvinceId(int provinceId) {
+        this.provinceId = provinceId;
     }
 
 }
